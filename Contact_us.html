@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact The Architect Mobile Barbershop for bookings and enquiries.">
+
+    <title>Contact Us | The Architect Barbershop</title>
+<!-- Website Favicon -->
+<link rel="icon" type="image/png" href="logo.png">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #eeeeee;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        .contact-header {
+            background: #171717;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .contact-header img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .contact-header h1 {
+            margin: 10px 0;
+            color: #d49b32;
+        }
+
+        .contact-header p {
+            margin: 5px;
+        }
+
+        /* NAVIGATION */
+
+        .contact-nav {
+            background: #292929;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .contact-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-nav li {
+            display: inline-block;
+            margin: 5px 12px;
+        }
+
+        .contact-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        .contact-nav a:hover {
+            color: #d49b32;
+        }
+
+        /* MAIN CONTENT */
+
+        .contact-container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .contact-intro {
+            background: #222;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .contact-intro h2 {
+            color: #d49b32;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .contact-section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact-section h2 {
+            color: #222;
+            border-bottom: 3px solid #d49b32;
+            padding-bottom: 10px;
+        }
+
+        /* CONTACT CARDS */
+
+        .contact-card {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #d49b32;
+            border-radius: 8px;
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .contact-number {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact-action {
+            display: inline-block;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            margin: 8px 8px 0 0;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .contact-action:hover {
+            background: #d49b32;
+            color: black;
+        }
+
+        /* WORKING HOURS */
+
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .hours-table th {
+            background: #222;
+            color: white;
+        }
+
+        .hours-table th,
+        .hours-table td {
+            padding: 13px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .hours-table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        .closed-day {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        /* BOOKING SECTION */
+
+        .booking-box {
+            background: #222;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .booking-box h2 {
+            color: #d49b32;
+        }
+
+        .booking-button {
+            display: inline-block;
+            background: #d49b32;
+            color: black;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .booking-button:hover {
+            background: white;
+        }
+
+        /* WHY CHOOSE US */
+
+        .contact-benefits {
+            padding-left: 20px;
+        }
+
+        .contact-benefits li {
+            margin: 12px 0;
+        }
+
+        /* FOOTER */
+
+        .contact-footer {
+            background: #171717;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 35px;
+        }
+
+        .contact-footer strong {
+            color: #d49b32;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media screen and (max-width: 600px) {
+
+            .contact-nav li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .contact-nav a {
+                font-size: 13px;
+                padding: 5px;
+            }
+
+            .contact-container {
+                width: 95%;
+            }
+
+            .contact-section {
+                padding: 18px;
+            }
+
+            .contact-number {
+                font-size: 18px;
+            }
+
+            .hours-table th,
+            .hours-table td {
+                padding: 9px;
+                font-size: 13px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="contact-header">
+
+        <img src="logo.png"
+             alt="The Architect Barbershop Logo">
+
+        <h1>The Architect Mobile Barbershop</h1>
+
+        <p>We come to you, you don't come to us!</p>
+
+        <p>Retla ho wena!</p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="contact-nav">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="AboutUs.html">About Us</a></li>
+
+            <li><a href="Contact_us.html">Contact Us</a></li>
+
+            <li><a href="Service.html">Services</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="contact-container">
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="contact-intro">
+
+            <h2>Get In Touch With Us</h2>
+
+            <p>
+                Looking for a fresh fade?
+                Need a barber who comes to you?
+            </p>
+
+            <p>
+                The Architect Mobile Barbershop is ready
+                to bring professional grooming services
+                directly to your doorstep!
+            </p>
+
+            <p>
+                Contact our team for bookings,
+                enquiries and more information.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT DETAILS -->
+
+        <section class="contact-section">
+
+            <h2>Our Contact Details</h2>
+
+            <p>
+                Reach our team using the contact
+                details below.
+            </p>
+
+
+            <!-- BOYZN -->
+
+            <div class="contact-card">
+
+                <h3>Boyzn</h3>
+
+                <p class="contact-number">
+                    081 278 1424
+                </p>
+
+                <a class="contact-action"
+                   href="tel:0812781424">
+
+                    Call Boyzn
+
+            </a>
+
+            </div>
+
+
+            <!-- JAIDEN -->
+
+            <div class="contact-card">
+
+                <h3>Jaiden</h3>
+
+                <p class="contact-number">
+                    068 011 4646
+                </p>
+
+                <a class="contact-action"
+                   href="tel:0680114646">
+
+                    Call Jaiden
+
+                </a>
+
+                <a class="contact-action"
+                   href="https://wa.me/27680114646"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    WhatsApp Jaiden
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- WORKING HOURS -->
+
+        <section class="contact-section">
+
+            <h2>Our Working Hours</h2>
+
+            <p>
+                We operate from Monday to Saturday.
+                Book an appointment during our working hours.
+            </p>
+
+            <table class="hours-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening Hours</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>08:00 AM – 06:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sunday</td>
+                        <td class="closed-day">Closed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- BOOKING -->
+
+        <section class="booking-box">
+
+            <h2>Ready For A Fresh Cut?</h2>
+
+            <p>
+                Our booking slots are limited.
+                Don't wait until the last minute!
+            </p>
+
+            <p>
+                Choose your haircut, preferred date
+                and time, then share your location.
+            </p>
+
+            <a href="Service.html"
+               class="booking-button">
+
+                Book Your Haircut Now
+
+            </a>
+
+        </section>
+
+
+        <!-- WHY CHOOSE US -->
+
+        <section class="contact-section">
+
+            <h2>Why Choose The Architect?</h2>
+
+            <ul class="contact-benefits">
+
+                <li>We bring the barber service to you.</li>
+
+                <li>Affordable haircut prices.</li>
+
+                <li>Professional mobile barbering.</li>
+
+                <li>Teamwork and quality service.</li>
+
+                <li>Convenient appointment scheduling.</li>
+
+                <li>Rechargeable clippers for mobile service.</li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="contact-footer">
+
+        <p>
+            &copy; 2026
+            <strong>The Architect Mobile Barbershop</strong>.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            We come to you, you don't come to us!
+        </p>
+
+        <p>
+            Retla ho wena!
+        </p>
+  <a href="https://www.facebook.com/profile.php?id=615941576796039" target="_blank">
+            Visit our Facebook page
+        </a>
+    </footer>
+
+
+</body>
+
+</html>

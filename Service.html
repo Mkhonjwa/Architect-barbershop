@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Book your haircut with The Architect Mobile Barbershop. Choose your haircut, date, time and share your location. We come to you!">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>The Architect Barbershop | Services & Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="services">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" id="logo" alt="The Architect Barbershop Logo" width="100">
+        </div>
+        <h1>The Architect Mobile Barbershop</h1>
+        <p>We come to you, you don't come to us!</p>
+        <p>Retla ho wena!</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Contact_us.html">Contact Us</a></li>
+            <li><a href="Service.html" aria-current="page">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- SERVICES INTRODUCTION -->
+    <section class="services-hero">
+        <h1>Our Haircut Services</h1>
+        <p>Choose your favourite hairstyle. We bring the barber experience directly to your doorstep!</p>
+        <p>Affordable prices, professional service and convenient mobile barbering.</p>
+    </section>
+
+    <main class="service-page">
+
+        <!-- BOOKING FORM -->
+        <form id="orderForm">
+
+            <!-- HAIRCUT OPTIONS -->
+            <section class="haircut-section">
+                <h2>Select Your Haircut</h2>
+                <p class="section-description">Choose one of our professional grooming services.</p>
+
+                <div class="haircut-grid">
+
+                    <!-- TAPER FADE -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Taper Fade" data-price="50" required>
+                        <img src="taper fade.jpg" alt="Taper fade haircut">
+                        <div class="haircut-info">
+                            <h3>Taper Fade</h3>
+                            <p>Clean and stylish taper fade, available in different styles.</p>
+                            <strong>R50</strong>
+                        </div>
+                    </label>
+
+                    <!-- SHORT CUT AND BEARD -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Short Cut + Beard" data-price="100">
+                        <img src="cut+beared.png" alt="Short haircut and beard trim">
+                        <div class="haircut-info">
+                            <h3>Short Cut + Beard</h3>
+                            <p>Fresh haircut with professional beard grooming.</p>
+                            <strong>R100</strong>
+                        </div>
+                    </label>
+
+                    <!-- LOW FADE -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Low Fade" data-price="50">
+                        <img src="low fade.jpg" alt="Low fade haircut">
+                        <div class="haircut-info">
+                            <h3>Low Fade</h3>
+                            <p>Classic low fade with a clean finish.</p>
+                            <strong>R50</strong>
+                        </div>
+                    </label>
+
+                    <!-- HIGH FADE -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="High Fade" data-price="50">
+                        <img src="high fade.png" alt="High fade haircut">
+                        <div class="haircut-info">
+                            <h3>High Fade</h3>
+                            <p>Stylish high fade with a sharp finish.</p>
+                            <strong>R50</strong>
+                        </div>
+                    </label>
+
+                    <!-- FLAT CUT -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Flat Cut" data-price="50">
+                        <img src="flat-cut.jpg" alt="Classic flat top haircut">
+                        <div class="haircut-info">
+                            <h3>Flat Cut</h3>
+                            <p>Classic flat haircut with a neat finish.</p>
+                            <strong>R50</strong>
+                        </div>
+                    </label>
+
+                    <!-- STANDARD CUT -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Standard Cut" data-price="20">
+                        <img src="drim.png" alt="standard haircut">
+                        <div class="haircut-info">
+                            <h3>Drim</h3>
+                            <p>A neat line to keep your haircut fresh.</p>
+                            <strong>R20</strong>
+                        </div>
+                    </label>
+
+                    <!-- BRAID AND FADE -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Braid + Cut" data-price="90">
+                        <img src="cut+braid.jpg" alt="Braid and haircut">
+                        <div class="haircut-info">
+                            <h3>Braid + Cut</h3>
+                            <p>Stylish braids combined with a fresh haircut.</p>
+                            <strong>R90</strong>
+                        </div>
+                    </label>
+
+                    <!-- FEMALE CUT -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Female Cut" data-price="40">
+                        <img src="female cut.png" alt="Female haircut">
+                        <div class="haircut-info">
+                            <h3>Female Cut</h3>
+                            <p>A clean and stylish close-cut look.</p>
+                            <strong>R40</strong>
+                        </div>
+                    </label>
+
+                    <!-- BALD CUT -->
+                    <label class="haircut-card">
+                        <input type="radio" name="cut" value="Bald Cut" data-price="35">
+                        <img src="bald.png" alt="Bald haircut">
+                        <div class="haircut-info">
+                            <h3>Bald</h3>
+                            <p>A clean, smooth and shiny look.</p>
+                            <strong>R35</strong>
+                        </div>
+                    </label>
+
+                </div>
+            </section>
+
+            <!-- CUSTOMER INFORMATION -->
+            <section class="customer-section">
+                <h2>Customer Information</h2>
+                <p>Please provide your details so our team can contact you about your appointment.</p>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="customerName" placeholder="Enter your full name" autocomplete="name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel" required>
+
+                <!-- BOOKING DATE -->
+                <h2>Choose Your Booking Date</h2>
+                <label for="bookingDate">Preferred Date</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+
+                <!-- BOOKING TIME -->
+                <h2>Select Your Time Slot</h2>
+                <label for="bookingTime">Available Time</label>
+                <select id="bookingTime" name="bookingTime" required>
+                    <option value="">Select your preferred time</option>
+                    <option value="08:00">08:00 AM</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                </select>
+
+                <p class="booking-note">Please note that your preferred time must be confirmed by our team.</p>
+
+                <!-- LOCATION SHARING -->
+                <h2>Your Location</h2>
+                <p>We are a mobile barbershop! Share your location so we know where to meet you for your haircut.</p>
+
+                <button type="button" id="getLocationBtn" class="location-btn">📍 Share My Current Location</button>
+                <p id="locationStatus" aria-live="polite">Location has not been shared yet.</p>
+                <a id="mapsLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Open Your Location in Google Maps</a>
+
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+
+                <!-- BOOKING SUBMISSION -->
+                <button type="submit" class="order-btn">Send Booking on WhatsApp</button>
+
+                <!-- BOOKING RESULT -->
+                <div id="orderResult" aria-live="polite"></div>
+
+                <!-- COPY BOOKING -->
+                <button type="button" id="copyBooking" class="location-btn" hidden>Copy Booking Details</button>
+            </section>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 The Architect Mobile Barbershop. All Rights Reserved.</p>
+        <p id="liveDateTime"></p>
+        <p>We come to you, you don't come to us!</p>
+    </footer>
+
+<!-- INLINE JS - WHATSAPP BACKEND -->
+<script>
+  // ====== PUT YOUR WHATSAPP NUMBER HERE ======
+  // International format, no + or spaces. Example SA: 27721234567
+  const BARBER_WHATSAPP = "0820812668";
+
+  // --- LIVE DATE/TIME ---
+  const liveDateTime = document.getElementById("liveDateTime");
+  if (liveDateTime) {
+    const updateTime = () => { liveDateTime.textContent = new Date().toLocaleString(); };
+    updateTime();
+    setInterval(updateTime, 1000);
+  }
+
+  // --- LOCATION ---
+  const getLocationBtn = document.getElementById("getLocationBtn");
+  const locationStatus = document.getElementById("locationStatus");
+  const mapsLink = document.getElementById("mapsLink");
+  const latitudeInput = document.getElementById("latitude");
+  const longitudeInput = document.getElementById("longitude");
+  let userLat = "";
+  let userLng = "";
+
+  if (getLocationBtn) {
+    getLocationBtn.addEventListener("click", () => {
+      if (!navigator.geolocation) {
+        locationStatus.textContent = "Geolocation is not supported by your browser.";
+        return;
+      }
+      locationStatus.textContent = "Getting your location...";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          userLat = pos.coords.latitude;
+          userLng = pos.coords.longitude;
+          latitudeInput.value = userLat;
+          longitudeInput.value = userLng;
+          locationStatus.textContent = "Location shared successfully!";
+          mapsLink.href = `https://www.google.com/maps?q=${userLat},${userLng}`;
+          mapsLink.hidden = false;
+        },
+        () => { locationStatus.textContent = "Could not get location. Please allow location access."; }
+      );
+    });
+  }
+
+  // --- BOOKING -> WHATSAPP ---
+  const orderForm = document.getElementById("orderForm");
+  const orderResult = document.getElementById("orderResult");
+  const copyBooking = document.getElementById("copyBooking");
+  let lastBookingText = "";
+
+  if (orderForm) {
+    orderForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const selectedCut = document.querySelector('input[name="cut"]:checked');
+      if (!selectedCut) {
+        orderResult.textContent = "Please select a haircut first.";
+        return;
+      }
+      const cut = selectedCut.value;
+      const price = selectedCut.dataset.price;
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const date = document.getElementById("bookingDate").value;
+      const time = document.getElementById("bookingTime").value;
+
+      if (!name || !phone || !date || !time) {
+        orderResult.textContent = "Please fill in all your details.";
+        return;
+      }
+
+      const mapsUrl = (userLat && userLng)
+        ? `https://www.google.com/maps?q=${userLat},${userLng}`
+        : "Location not shared";
+
+      lastBookingText =
+`NEW BOOKING - The Architect Mobile Barbershop
+
+Name: ${name}
+Phone: ${phone}
+Haircut: ${cut} - R${price}
+Date: ${date}
+Time: ${time}
+Location: ${mapsUrl}
+Lat: ${userLat || "N/A"}
+Lng: ${userLng || "N/A"}`;
+
+      orderResult.innerHTML = "<strong>Booking ready!</strong><br>Opening WhatsApp to send it to us...";
+      copyBooking.hidden = false;
+
+      const whatsappUrl = `https://wa.me/${BARBER_WHATSAPP}?text=${encodeURIComponent(lastBookingText)}`;
+      window.open(whatsappUrl, "_blank");
+    });
+  }
+
+  // --- COPY BOOKING ---
+  if (copyBooking) {
+    copyBooking.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(lastBookingText);
+        copyBooking.textContent = "Copied!";
+        setTimeout(() => copyBooking.textContent = "Copy Booking Details", 2000);
+      } catch {
+        alert(lastBookingText);
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
